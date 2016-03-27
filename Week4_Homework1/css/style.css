@@ -1,0 +1,161 @@
+/*背景*/
+body{
+    background-color: rgb(233,233,233);
+    font-family: "微软雅黑", Arial, sans-serif;
+    font-size: 62.5%;
+    font-weight: bold;
+}
+
+/*顶部背景*/
+header{
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    background: url("../img/bg_01.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+/*导航背景渐变*/
+form{
+    height: 50px;
+    background: linear-gradient(#000000, transparent);
+}
+
+button{
+    padding: 0px;
+    border: none;
+    background: transparent;
+}
+
+/*菜单背景*/
+.menu{
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+/*菜单选项*/
+[class^="icons"]{
+    width: 100%;
+    height: 100%;
+    min-height: 60px;
+    min-width: 60px;
+    background-color: transparent;
+    border-radius: 50% 50%;
+    background: url("../img/icons.png");
+    transform: translate(-12.5%);
+}
+
+.icons-1{
+    background-position: -24px -19px;
+}
+
+.icons-2{
+    background-position: -132px -19px;
+}
+
+.icons-3{
+    background-position: -247px -19px;
+}
+
+.icons-4{
+    background-position: -363px -19px;
+}
+
+.icons-5{
+    background-position: -18px -135px;
+}
+
+.icons-6{
+    background-position: -132px -135px;
+}
+
+.icons-7{
+    background-position: -247px -135px;
+}
+
+.icons-8{
+    background-position: -363px -135px;
+}
+/*菜单选项结束*/
+
+/*商品区域*/
+table{
+    width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+    background: #ffffff;
+    border-collapse: collapse;
+}
+
+table td{
+    padding: 5px;
+}
+
+/*区域标题*/
+.t-head{
+    line-height: 2em;
+    font-size: 2.5em;
+    color: rgb(88,88,88);
+}
+
+/*商品区域结束*/
+
+/*广告*/
+.ad{
+    height: 50px;
+    width: 100%;
+}
+
+.ad-1{
+    background: url("../img/bg_02.png");
+    background-size: cover;
+
+}
+
+.ad-2{
+     background: url("../img/bg_03.png");
+     background-size: cover;
+
+ }
+
+/*广告结束*/
+
+/*底部*/
+footer{
+    width: 100%;
+    height: 75px;
+    background: url("../img/bg_04.png");
+    background-size: cover;
+    background-position: center;
+}
+/*底部结束*/
+
+/*字体*/
+.font-name{
+    font-size: 2em;
+
+}
+
+.font-money{
+    font-size: 2em;
+    font-weight: normal;
+    color: #ff4500;
+}
+
+.font-foot{
+    height: 2em;
+    line-height: 2em;
+    color: #ffffff;
+}
+.font-normal{
+    font-weight: normal;
+}
+
+a:link,a:visited,a:hover,a:active{
+    color: #ffffff;
+}
+
+
+
+

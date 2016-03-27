@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JavaScript更改网站主题</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link id="style" rel="stylesheet" type="text/css" href="css/style.01.css">
+</head>
+<body>
+    <!--顶部 搜索栏 更换颜色-->
+    <div class="container">
+        <div class="hd">
+            <img class="hd-img pull-left" src="img/webv2.png" width="104" height="34">
+            <form class="hd-form pull-left">
+                <input type="text" class="pull-left">
+                <input type="submit" class="pull-left" value=" ">
+            </form>
+            <div id="colors" class="hd-color pull-left">
+                <div data-color="css/style.01.css" class="colors color-1"></div>
+                <div data-color="css/style.02.css" class="colors color-2"></div>
+                <div data-color="css/style.03.css" class="colors color-3"></div>
+                <div data-color="css/style.04.css" class="colors color-4"></div>
+                <div data-color="css/style.05.css" class="colors color-5"></div>
+                <small>点击更换主题</small>
+            </div>
+        </div>
+    </div>
+    <div class="container hd-nav">
+        <!--中间导航-->
+        <div>
+            <ul>
+                <li>首页</li>
+                <li>电视剧</li>
+                <li>最新电影</li>
+                <li>新闻头条</li>
+                <li>八卦娱乐</li>
+                <li>军事热点</li>
+                <li>热门游戏</li>
+                <li>小游戏</li>
+                <li>今日特价</li>
+                <li>特价旅游</li>
+                <li>生活服务</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <!--左侧网站导航-->
+            <div class="hd-left pull-left">
+                <div class="hd-left-span">
+                    <i class="icon-tv"></i>
+                    <a class="hd-left-a">电视剧</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">综艺</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-game"></i>
+                    <a class="hd-left-a">游戏</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">小游戏</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-movie"></i>
+                    <a class="hd-left-a">电影</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">直播</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-comic"></i>
+                    <a class="hd-left-a">动画</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">漫画</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-news"></i>
+                    <a class="hd-left-a">头条</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">军事</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-travel"></i>
+                    <a class="hd-left-a">旅游</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">门票</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-caipiao"></i>
+                    <a class="hd-left-a">彩票</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">股票</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-happy"></i>
+                    <a class="hd-left-a">搞笑</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">小说</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-tuan"></i>
+                    <a class="hd-left-a">特价</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">海淘</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-edu"></i>
+                    <a class="hd-left-a">教育</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">理财</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-life"></i>
+                    <a class="hd-left-a">生活</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">天气</a>
+                </div>
+                <div class="hd-left-span">
+                    <i class="icon-food"></i>
+                    <a class="hd-left-a">美食</a>
+                    <span class="hd-left-split">|</span>
+                    <a class="hd-left-a">音乐</a>
+                </div>
+            </div>
+            <!--右侧网站导航-->
+            <div class="hd-right pull-left">
+                <div class="hd-right-span center-block">
+                    <i class="icon-right-baidu"></i>
+                    <a>百度</a>
+                    <span>&nbsp;•&nbsp;</span>
+                    <a>贴吧</a>
+                </div>
+                <div class="hd-right-span  center-block">
+                    <i class="icon-right-xinlang"></i>
+                    <a>新浪</a>
+                    <span>&nbsp;•&nbsp;</span>
+                    <a>微博</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-souhu"></i>
+                    <a>搜狐</a>
+                    <span>&nbsp;•&nbsp;</span>
+                    <a>热点</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-tengxun"></i>
+                    <a>腾&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;讯</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-wangyi"></i>
+                    <a>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;易</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-iqiyi"></i>
+                    <a>爱奇艺高清</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-tianmao"></i>
+                    <a>天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猫</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-fenghuang"></i>
+                    <a>凤&nbsp;&nbsp;&nbsp;&nbsp;凰&nbsp;&nbsp;&nbsp;&nbsp;网</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-taobao"></i>
+                    <a>淘&nbsp;&nbsp;&nbsp;&nbsp;宝&nbsp;&nbsp;&nbsp;&nbsp;网</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-game"></i>
+                    <a>免费游戏</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-4399"></i>
+                    <a>4399游戏</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-xinhua"></i>
+                    <a>新华</a>
+                    <span>&nbsp;•&nbsp;</span>
+                    <a>人民</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-jingdong"></i>
+                    <a>京&nbsp;&nbsp;东&nbsp;&nbsp;商&nbsp;&nbsp;城</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-juhuasuan"></i>
+                    <a>聚&nbsp;&nbsp;&nbsp;&nbsp;划&nbsp;&nbsp;&nbsp;&nbsp;算</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-jinritejia"></i>
+                    <a>今&nbsp;&nbsp;日&nbsp;&nbsp;特&nbsp;&nbsp;价</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-hao123"></i>
+                    <a>hao123影视</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-car"></i>
+                    <a>汽车之家</a>
+                </div>
+                <div class="hd-right-span">
+                    <i class="icon-right-qunaer"></i>
+                    <a>去&nbsp;&nbsp;&nbsp;&nbsp;哪&nbsp;&nbsp;&nbsp;&nbsp;儿</a>
+                </div>
+                <div class="hd-right-line"></div>
+                <div class="hd-right-span">
+                    <a>东方财富</a>
+                    <span>&nbsp;•&nbsp;</span>
+                    <a>理财</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>58&nbsp;&nbsp;同&nbsp;&nbsp;城</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>搜&nbsp;&nbsp;房&nbsp;&nbsp;网</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>携程网</a>
+                    <span>&nbsp;•&nbsp;</span>
+                    <a>机票</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>PPTV聚力</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>12306</a>
+                    <span>&nbsp;•&nbsp;</span>
+                    <a>火车票</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>聚美优品</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>赶集网</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>易车网</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>彩票开奖</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>爱卡汽车</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>工商银行</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>唯品会</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>同程旅游</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>途牛旅游网</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>百度浏览器</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>太平洋汽车</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>艺龙网</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>百度糯米</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>蘑菇街</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>hao到家</a>
+                    <span>&nbsp;•&nbsp;</span>
+                    <a>旅游</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>在线学习</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>萌主页</a>
+                    <span>&nbsp;•&nbsp;</span>
+                    <a>动漫</a>
+                </div>
+                <div class="hd-right-span">
+                    <a>中国移动</a>
+                </div>
+                <div class="hd-right-span">
+                    <a class="hd-right-change ">苏宁易购</a>
+                </div>
+                <div class="hd-right-span">
+                    <a  class="hd-right-change ">国美在线</a>
+                </div>
+                <div class="hd-right-span">
+                    <a class="hd-right-change ">购物大全</a>
+                </div>
+                <div class="hd-right-span">
+                    <a class="hd-right-change ">1号店</a>
+                </div>
+                <div class="hd-right-span">
+                    <a class="hd-right-change ">爱淘宝</a>
+                </div>
+                <div class="hd-right-span">
+                    <a class="hd-right-change ">手机</a>
+                    <span class="hd-right-change ">&nbsp;•&nbsp;</span>
+                    <a class="hd-right-change ">海淘</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/change.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+body{
+    max-width: 1340px;
+    display: block;
+    background-color: #ffffff;
+}
+
+/*safafi and opera hack*/
+@media all and (min-width: 0px) {
+    body{
+        max-width: 1364px;
+    }
+}
+
+/* header 导航栏设置*/
+.hd{
+    min-height: 0;
+    padding: 0 530px 0 350px;
+}
+
+.hd-nav{
+    min-height: 0;
+    height: 48px;
+    width: 100%;
+    float: left;
+}
+
+header nav{
+    height: 24px;
+    width: 530px;
+    float: left;
+    margin-left: -530px;
+    padding: 19px 0 5px 0;
+    position: relative;
+    right: -530px;
+    +right: -530px;
+}
+
+ul>li {
+    float: right;
+}
+
+ul>li:first-child{
+    margin: 0px;
+}
+
+/*无下拉菜单*/
+header nav>ul li{
+    display: inline-block;
+    list-style: none;
+    +display: inline;
+    +zoom: 1;
+}
+
+header nav>ul li>a{
+    text-decoration: underline;
+    font-size: 13px;
+    line-height: 24px;
+    margin-right: 20px;
+}
+
+.hd-nav-li1{
+    font-weight: bold;
+}
+
+.hd-nav-li1:link,.hd-nav-li1:visited{
+    color: #333333;
+}
+
+.hd-nav-li1:hover,.hd-nav-li1:active{
+    color: #0000cc;
+}
+
+.hd-nav-li2:link,.hd-nav-li2:visited{
+    color: #333333;
+}
+
+.hd-nav-li2:hover,.hd-nav-li2:active{
+    color: #0000cc;
+    cursor: pointer;
+}
+
+/*有下拉菜单*/
+header li>ul{
+    width: auto;
+    position: absolute;
+    left: -5000em;
+}
+
+nav ul li:hover ul{
+    left: auto;
+}
+
+/*下拉菜单1 设置*/
+.hd-nav-li2{
+    margin-right: 15px;
+    +display: inline;
+}
+
+/*设置的下拉菜单*/
+.hd-nav-ul1{
+    width: 70px;
+    border: 1px solid rgb(211,211,211);
+    margin-left: -20px;
+    +display: block;
+}
+
+.hd-nav-li-ul-li1{
+    display: block;
+    text-decoration: none;
+    width: 60px;
+    margin: 0;
+    padding: 3px 0 0 10px;
+}
+
+.hd-nav-li-ul-li1:link,.hd-nav-li-ul-li1:visited{
+    background: #ffffff;
+    color: #333333;
+}
+
+.hd-nav-li-ul-li1:hover,.hd-nav-li-ul-li1:active{
+    background: #3385ff;
+    color: #ffffff;
+}
+
+/*下拉菜单2更多产品*/
+#more{
+    width: 102px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#more2{
+    width: 60px;
+    height: 24px;
+    background-color: #38f;
+    color: #ffffff;
+    margin-right: 21px;
+    margin-left: 21px;
+}
+
+.hd-nav-ul2{
+    width: 70px;
+    float: right;
+    clear:both;
+    border: 1px solid rgb(211,211,211);
+    border-top: none;
+    border-right: none;
+    +display: inline;
+    top: 60px;
+}
+
+/*更多产品下拉菜单*/
+.hd-nav-ul2{
+    display: block;
+    background-color: rgb(248,248,248);
+    height: auto;
+    width: 103px;
+}
+
+.hd-nav-li-ul-li2{
+    display: block;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 15px;
+    border-bottom: 1px solid rgb(211,211,211);
+    color: rgb(111,111,111);
+}
+
+/* ie 7 8 9 去掉icon的边框 */
+.hd-nav-li-ul-li2>img{
+    border: none;
+}
+
+.hd-nav-li-ul-li2:link,.hd-nav-li-ul-li2:visited{
+}
+
+.hd-nav-li-ul-li2:hover,.hd-nav-li-ul-li2:active{
+    text-decoration: underline;
+}
+
+.hd-nav-li-ul-li3{
+    display: block;
+    color: rgb(111,111,111);
+    height: 50px;
+    height: 76px\9;
+    +height: 105px;
+}
+
+/*container*/
+.container{
+    text-align: center;
+    padding-top: 55px;
+    min-width: 800px;
+}
+
+/*表单*/
+form{
+    padding-top: 20px;
+    font-size: 0px;
+    width: 660px;
+    height: 40px;
+    margin: 0px auto;
+}
+
+form input{
+    width: 540px;
+    height: 36px;
+    line-height: 36px\9;
+    border: 1px solid rgb(188,188,188);
+    +border: 1px solid rgb(188,188,188);
+    vertical-align: middle;
+    font-size: 16px;
+    padding-left:7px;
+    float: left;
+    margin: 0 auto;
+    min-height: 0;
+}
+
+form input:hover, form input:active {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+form input:focus{
+    border-color:  #3385ff;
+    outline-style: none;
+}
+
+form button{
+    width: 100px;
+    height: 38px;
+    float: left;
+    vertical-align: middle;
+    background-color: #3385ff;
+    font-size: 15px;
+    color: #ffffff;
+    border: 1px solid #3385ff;
+    +border: none;
+}
+
+form button:hover{
+    background-color: #1A71F3;
+    cursor: pointer;
+    border-bottom: 1px solid #2868c8;
+    +border: none;
+    box-shadow: 1px 1px 1px #cccccc;
+}
+
+/*底部*/
+footer{
+    overflow: hidden;
+    width: 700px;
+    height: 60px;
+    left: 50%;
+    position: absolute;
+    margin: 260px 0 0 -310px;
+}
+
+.ft-img{
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.ft-text{
+    position: relative;
+    float: left;
+    margin: 8px 35px 0 0;
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+
+.ft-info{
+    line-height: 23px;
+    margin-top: 8px;
+}
+
+/*字体*/
+.bold{
+    font-weight: bold;
+    color: #4c4c4c;
+}
+
+.light{
+    color: #999;
+
+}
+
+.a-text{
+    color: #272727;
+}
+
+.span-text{
+    color: #666;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>JavaScript计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>JavaScript计算器</h1>
+<!--计算器面板-->
+<div class="calculator center-block">
+    <!--上部算式及结果-->
+    <div class="cal-top">
+        <div id="calEquation" class="cal-equation">&nbsp;</div>
+        <div id="calResult" class="cal-result">0</div>
+    </div>
+    <!--下部按钮-->
+    <div class="cal-buttons" id="calButtons">
+        <div class="btn-cal btn-cal-save" data-value="save">存储</div>
+        <div class="btn-cal btn-cal-save" data-value="read">读取</div>
+        <div class="btn-cal btn-cal-save" data-value="savePlus">累存</div>
+        <div class="btn-cal btn-cal-save" data-value="saveTimes">积存</div>
+        <div class="btn-cal btn-cal-save" data-value="saveClear">清存</div>
+        <div class="btn-cal btn-cal-operator" data-value="factorial">!</div>
+        <div class="btn-cal btn-cal-operator" data-value="power">^</div>
+        <div class="btn-cal btn-cal-operator" data-value="sqrt">&radic;</div>
+        <div class="btn-cal btn-cal-operator" data-value="opposite">&plusmn;</div>
+        <div class="btn-cal btn-cal-operator" data-value="clearScreen">C</div>
+        <div class="btn-cal btn-cal-operator" data-value="sin">sin</div>
+        <div class="btn-cal btn-cal-operator" data-value="reciprocal">1/x</div>
+        <div class="btn-cal btn-cal-operator" data-value="pi">π</div>
+        <div class="btn-cal btn-cal-operator" data-value="e">e</div>
+        <div class="btn-cal btn-cal-operator" data-value="delete">&larr;</div>
+        <div class="btn-cal btn-cal-operator" data-value="cos">cos</div>
+        <div class="btn-cal" data-value="7">7</div>
+        <div class="btn-cal" data-value="8">8</div>
+        <div class="btn-cal" data-value="9">9</div>
+        <div class="btn-cal btn-cal-operator" data-value="divide">&divide;</div>
+        <div class="btn-cal btn-cal-operator" data-value="tan">tan</div>
+        <div class="btn-cal" data-value="4">4</div>
+        <div class="btn-cal" data-value="5">5</div>
+        <div class="btn-cal" data-value="6">6</div>
+        <div class="btn-cal btn-cal-operator" data-value="times">&times;</div>
+        <div class="btn-cal btn-cal-operator" data-value="ln">ln</div>
+        <div class="btn-cal" data-value="1">1</div>
+        <div class="btn-cal" data-value="2">2</div>
+        <div class="btn-cal" data-value="3">3</div>
+        <div class="btn-cal btn-cal-operator" data-value="minus">-</div>
+        <div class="btn-cal btn-cal-operator" data-value="log">log</div>
+        <div class="btn-cal" data-value="0">0</div>
+        <div class="btn-cal" data-value=".">.</div>
+        <div class="btn-cal btn-cal-equal" data-value="equal">=</div>
+        <div class="btn-cal btn-cal-operator" data-value="plus">+</div>
+    </div>
+</div>
+<script type="text/javascript" src="js/calculator.js"></script>
+</body>
+</html>

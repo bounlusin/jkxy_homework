@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/indexcss.css">
+    <script src="js/jQuery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--顶部-->
+    <header>
+        <!--导航栏-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!--左侧-->
+                <div class="navbar-header">
+                    <img src="img/logo.png" class="" width="138" height="36">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!--右侧-->
+                <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">绩效管理</a></li>
+                        <li><a href="#">职位设置</a></li>
+                        <li><a href="#">文章发布</a></li>
+                        <li><a href="#">数据统计</a></li>
+                        <li><a href="#">资源管理</a></li>
+                        <li><a href="#">系统管理</a></li>
+                        <li><a href="#"><span class="icon-user"></span></a></li>
+                        <li><a href="login.html">退出</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <input type="text" class="form-control" placeholder="搜索..."/>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--主体Container-->
+    <div class="container-fluid">
+        <div class="row">
+            <!--左侧菜单-->
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li><a href="#" class="sidebar-a"><span class="icon-user"></span>信息管理</a></li>
+                    <li><a href="#" class="sidebar-a"><span class="icon-mail2"></span>问题反馈</a></li>
+                    <li><a href="#" class="sidebar-a active"><span class="icon-profile"></span>用户注册资料</a></li>
+                    <li><a href="#" class="sidebar-a"><span class="icon-connection"></span>网络配置</a></li>
+                    <li><a href="#" class="sidebar-a"><span class="icon-cog"></span>数据库</a></li>
+                    <li><a href="#" class="sidebar-a"><span class="icon-key"></span>安全选项</a></li>
+                    <li><a href="#" class="sidebar-a"><span class="icon-pencil"></span>自定义</a></li>
+                </ul>
+            </div>
+            <!--右侧主体内容-->
+            <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2 main">
+                <h1 class="page-header">用户注册资料</h1>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>用户名</td>
+                                <td>昵称</td>
+                                <td>籍贯</td>
+                                <td>毕业学校</td>
+                                <td>出生日期</td>
+                                <td>手机号码</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>201501</td>
+                                <td>admin</td>
+                                <td>熊猫王子</td>
+                                <td>中国</td>
+                                <td>南京林业大学</td>
+                                <td>1982-10-18</td>
+                                <td>13812345678</td>
+                            </tr>
+                            <tr>
+                                <td>201502</td>
+                                <td>uimaker</td>
+                                <td>小牛</td>
+                                <td>中国</td>
+                                <td>山东大学</td>
+                                <td>1989-11-13</td>
+                                <td>13812345678</td>
+                            </tr>
+                            <tr>
+                                <td>201503</td>
+                                <td>pptwork</td>
+                                <td>横板设计</td>
+                                <td>中国</td>
+                                <td>北京科技大学</td>
+                                <td>1990-03-24</td>
+                                <td>13812345678</td>
+                            </tr>
+                            <tr>
+                                <td>201504</td>
+                                <td>nanjing</td>
+                                <td>南京</td>
+                                <td>中国</td>
+                                <td>南京航空航天大学</td>
+                                <td>1985-05-01</td>
+                                <td>13812345678</td>
+                            </tr>
+                            <tr>
+                                <td>201505</td>
+                                <td>admin</td>
+                                <td>管理员</td>
+                                <td>中国</td>
+                                <td>南京大学</td>
+                                <td>1982-10-18</td>
+                                <td>13812345678</td>
+                            </tr>
+                            <tr>
+                                <td>201506</td>
+                                <td>uimaker</td>
+                                <td>ui制造者</td>
+                                <td>中国</td>
+                                <td>南京艺术学院</td>
+                                <td>1982-10-18</td>
+                                <td>13812345678</td>
+                            </tr>
+                            <tr>
+                                <td>201507</td>
+                                <td>luffy</td>
+                                <td>路飞</td>
+                                <td>东海</td>
+                                <td>无</td>
+                                <td>1982-10-18</td>
+                                <td>13812345678</td>
+                            </tr>
+                            <tr>
+                                <td>201508</td>
+                                <td>zoro</td>
+                                <td>罗罗诺亚·索隆</td>
+                                <td>东海</td>
+                                <td>无</td>
+                                <td>1982-10-18</td>
+                                <td>13812345678</td>
+                            </tr>
+                            <tr>
+                                <td>201509</td>
+                                <td>panda</td>
+                                <td>熊猫人</td>
+                                <td>中国</td>
+                                <td>吉林大学</td>
+                                <td>1993-07-30</td>
+                                <td>13812345678</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/*公用样式*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+body{
+	background: #333333;
+}
+
+/*头部*/
+.header{
+    background-color: #000000;
+}
+
+.header-text{
+    color: #fff;
+}
+
+.main{
+    margin-top: 35px;
+}
+
+.menu-in{
+    display: inline-block;
+    list-style-type: none;
+}

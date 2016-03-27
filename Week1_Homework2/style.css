@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(188,188,188);
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 42px;
+    color: steelblue;
+}
+
+.bg_image{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    background-image: url("http://img.taopic.com/uploads/allimg/120301/6388-12030122394896.jpg");
+    background-size: cover;
+    margin-left: 182px;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+table{
+    width: 1000px;
+    height: 500px;
+    border: 3px solid skyblue;
+    margin: 10px auto;
+    position: relative;
+}
+
+th,td{
+    width: 30px;
+    height: 20px;
+    border: 1px solid white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+th,.td_day{
+    color: saddlebrown;
+}
+
+.tr_odd{
+    color: orangered;
+}
+
+.tr_even{
+    color: dodgerblue;
+}
+
+.td_num{
+    color: red;
+}
+
+.td_rest{
+    color: rgb(155,155,155);
+    font-size: 36px;
+}

@@ -1,0 +1,32 @@
+body{
+    background: #333;
+    font-family: "微软雅黑", Arial, sans-serif;
+    color: rgb(244, 244, 244);
+}
+
+form{
+    width: 300px;
+    height: 350px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid rgb(233,233,233);
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    form{
+        width: 90%;
+    }
+}
+
+h1{
+    text-align: center;
+}
+
+[type="text"]{
+    margin-top: 20px;
+}
+
+[type="password"]{
+    margin-bottom: 20px;
+}

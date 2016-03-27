@@ -1,0 +1,137 @@
+@bg-color : #fff;
+@green: #07800C;
+@red: #ff0000;
+@font-size : 12px;
+@font-family: Verdana,
+"Lantinghei SC",
+"Hiragino Sans GB",
+"Microsoft Yahei",
+Helvetica,
+arial,
+sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #03A9F4;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    width: 700px;
+    height: 350px;
+    background: @bg-color;
+    margin: 100px auto;
+    .top {
+        width: 100%;
+        height: 120px;
+        float: left;
+        background: @bg-color;
+        .left {
+            height: 100%;
+            width: 240px;
+            float: left;
+            background: @bg-color;
+            .number {
+                width: 220px;
+                height: 80px;
+                margin: 5px auto;
+                background: @red;
+                color: @bg-color;
+                text-align: center;
+                h1 {
+                    line-height: 80px;
+                    font-size: @font-size * 5;
+                    font-family: "黑体";
+                }
+            }
+            p {
+                font-size: @font-size + 2;
+                font-family: "微软雅黑";
+                .bold;
+            }
+        }
+        .right {
+            height: 100%;
+            width: 460px;
+            background: @bg-color;
+            float: left;
+            text-align: center;
+            .route {
+                margin-top: 5px;
+                color: @green;
+                font-family: "黑体";
+                font-size: @font-size + 10;
+                .bold;
+            }
+            .route-small {
+                margin-top: 10px;
+                color: @green;
+                font-family: "黑体";
+                font-size: @font-size + 5;
+            }
+            .station {
+                margin-top: 10px;
+                color: @red;
+                font-family: "黑体";
+                font-size: @font-size + 10;
+                .bold;
+            }
+        }
+    }
+    .middle {
+        width: 100%;
+        height: 190px;
+        float: left;
+        background: @green;
+        p {
+            display: block;
+            float: left;
+            margin: 3px 8px;
+            text-algin: center;
+            width: @font-size;
+            height: auto;
+            color: @bg-color;
+            font-family: @font-family;
+            &:hover {
+                color: #000000;
+                cursor: pointer;
+            }
+        }
+    }
+    .bottom {
+        width: 100%;
+        height: 40px;
+        float: left;
+        background: @bg-color;
+        p {
+            margin-top: 3px;
+            text-align: center;
+            font-family: @font-family;
+            font-size: @font-size;
+            .bold;
+        }
+        .arrow {
+            float: left;
+            margin-left: 100px;
+            margin-top: 8px;
+            width: 470px;
+            height: 8px;
+            background: @red;
+        }
+        .arrow-right {
+            float: left;
+            width: 0;
+            height: 0;
+            border-left: 15px solid @red;
+            border-bottom: 8px solid @red;
+            border-top: 8px solid transparent;
+            border-right: 15px solid transparent;
+        }
+    }
+}

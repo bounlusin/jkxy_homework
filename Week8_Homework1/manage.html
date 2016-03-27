@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>百度新闻后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+</head>
+
+<body>
+    <!-- 头部状态条 -->
+    <section class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="header-text">百度新闻后台管理</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 操作页面 -->
+    <section class="main">
+        <div class="container">
+            <div class="jumbotron">
+                <h2>管理员，你好！</h2>
+                <p>
+                    <!-- 操作按钮 -->
+                    <a id="add" class="btn btn-primary" href="#" role="button">
+                        添加新闻
+                    </a>
+                    <a id="manage" class="btn btn-primary" href="#" role="button">
+                        所有新闻
+                    </a>
+                    <a id="logout" class="btn btn-danger" href="#" role="button">退出登陆</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- 新闻列表 -->
+    <section class="news-list">
+        <div class="container">
+            <div class="row">
+                <!-- 列表内容 -->
+                <div class="col-md-12">
+                    <!-- 搜索框 -->
+                    <div class="input-group">
+                        <input id="search-input" type="text" class="form-control" placeholder="输入标题搜索新闻...">
+                        <span class="input-group-btn">
+                            <button id="search-button" class="btn btn-primary" type="button">搜索</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <!-- 交互进度条 -->
+                    <p>
+                        <div id="waiting" class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                <span class="sr-only">100% 搜索完成</span>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+                <div class="col-md-12 media">
+                    <div class="list-group" id="newsList">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 编辑框 -->
+    <div class="modal fade" id="editWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">新闻编辑</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <div class="input-group">
+                            <!-- 分类选择按钮 -->
+                            <div class="input-group-btn">
+                                <button id="edit-type" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择分类</button>
+                                <ul id="edit-type-select" class="dropdown-menu">
+                                    <li><a href="#">推荐</a></li>
+                                    <li><a href="#">科技</a></li>
+                                    <li><a href="#">军事</a></li>
+                                    <li><a href="#">社会</a></li>
+                                    <li><a href="#">教育</a></li>
+                                    <li><a href="#">娱乐</a></li>
+                                </ul>
+                            </div>
+                            <!-- 输入框 -->
+                            <input id="edit-title" type="text" class="form-control">
+                        </div>
+                    </p>
+                    <p>
+                        <!-- 文章内容 -->
+                        <div class="form-group">
+                            <textarea id="edit-content" class="form-control" rows="10"></textarea>
+                        </div>
+                    </p>
+                    <p>
+                        <h6>图片</h6>
+                        <input id="edit-img" type="text" class="form-control">
+                    </p>
+                    <p>
+                        <h6>添加时间</h6>
+                       <input id="add-time" type="datetime" readonly="true" class="form-control"> 
+                    </p>
+                    <p>
+                        <!-- 交互进度条 -->
+                        <div id="edit-waiting" class="progress">
+                            <div class="progress-bar progress-bar-warn progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                <span class="sr-only">100% 传送完成</span>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+                <!-- 编辑框操作区 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button id="edit-btn-save" type="button" class="btn btn-success">保存</button>
+                    <button id="edit-btn-delete" type="button" class="btn btn-danger">删除新闻</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- js文件引入 -->
+<script src="js/jQuery.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/manage.js" type="text/javascript"></script>
+
+</html>

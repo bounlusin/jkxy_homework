@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0D7792;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 150%;
+}
+
+.container{
+    background-color: white;
+    width: 710px;
+    height: auto;
+    border: 1px solid #0D7792;
+    border-radius: 30px;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+header>a{
+    float: right;
+    margin: 65px 15px 0 0;
+    color: rgb(255, 0, 153);
+    text-decoration: none;
+}
+header>img{
+    margin: 5px 0 0 30px;
+}
+
+h1{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 640px;
+    height: auto;
+    margin: 0px auto;
+}
+
+table{
+    border: 1px solid rgb(188,188,188);
+    border-collapse: collapse;
+    width: 640px;
+    height: auto;
+}
+
+th,tr,td{
+    border: 1px solid rgb(188,188,188);
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+th{
+    font-weight: normal;
+}
+
+.back:link,.back:visited{
+    color: blue;
+}
+
+.back:hover,.back:active{
+    color: red;
+}
+
+.tr_info{
+    background-color: #EEEEEE;
+    font-weight: bold;
+    font-size: 13px;
+    text-indent: 1em;
+    color: #003399;
+}
+.td_info{
+    text-align: right;
+}
+.td_input{
+    width: 500px;
+    color: blue;
+}
+
+input[type="text"],input[type="email"]{
+    width: 243px;
+}
+
+.red{
+    color: red;
+}
+
+.bold{
+    color: rgb(47,47,47);
+    font-weight: bold;
+}
+
+.submit_button{
+    height: 85px;
+    text-align: center;
+}
+
+input[type="submit"]{
+    padding: 5px 20px;
+}
+
+footer{
+    text-align: center;
+    margin: 5px 0 25px 0;
+}
+
+.copyright{
+    color: rgb(102,102,102);
+}

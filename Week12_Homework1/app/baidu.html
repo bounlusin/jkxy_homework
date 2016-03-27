@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>百度一下，你就知道</title>
+    <link rel="icon" type="image/icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <header class="hd">
+        <div class="pull-left">
+            <a class="hd-left-menu-li">天气</a>
+            <a class="hd-left-menu-li">宝箱</a>
+            <a id="showSkin" class="hd-left-menu-li">换肤</a>
+            <a class="hd-left-menu-li">消息</a>
+        </div>
+        <div class="pull-right">
+            <ul class="hd-ul">
+                <li class="pull-left"><a class="hd-right-menu-li">糯米</a></li>
+                <li class="pull-left"><a class="hd-right-menu-li">新闻</a></li>
+                <li class="pull-left"><a class="hd-right-menu-li">hao123</a></li>
+                <li class="pull-left"><a class="hd-right-menu-li">地图</a></li>
+                <li class="pull-left"><a class="hd-right-menu-li">视频</a></li>
+                <li class="pull-left"><a class="hd-right-menu-li">贴吧</a></li>
+                <li class="pull-left"><a class="hd-right-menu-li hd-right-menu-username">用户名</a></li>
+                <li class="pull-left"><a class="hd-right-menu-li hd-right-menu-set">设置</a></li>
+                <li class="pull-left"><a class="hd-right-menu-more">更多产品</a></li>
+            </ul>
+        </div>
+        <div class="hd-menu-username hide">
+            <div class="hd-menu-username-a">我的VIP</div>
+            <div class="hd-menu-username-a">个人中心</div>
+            <div class="hd-menu-username-a">账号设置</div>
+            <div class="hd-menu-username-a">意见反馈</div>
+            <div class="hd-menu-username-a">退出</div>
+        </div>
+        <div class="hd-menu-set hide">
+            <div class="hd-menu-set-a">搜索设置</div>
+            <div class="hd-menu-set-a">高级搜索</div>
+            <div class="hd-menu-set-a">关闭预测</div>
+            <div class="hd-menu-set-a">搜索历史</div>
+        </div>
+        <div class="hd-menu-more hide">
+            <a class="hd-menu-more-a">
+                <img src="images/yinyue.png">
+                <br/>音乐
+            </a>
+            <a class="hd-menu-more-a">
+                <img src="images/tupian.png">
+                <br/>图片
+            </a>
+            <a class="hd-menu-more-a">
+                <img src="images/zhidao.png">
+                <br/>知道
+            </a>
+            <a class="hd-menu-more-a">
+                <img src="images/wenku.png">
+                <br/>文库
+            </a>
+            <a class="hd-menu-more-a">
+                <img src="images/fengyunbang.png">
+                <br/>风云榜
+            </a>
+            <a class="hd-menu-more-a">
+                <img src="images/tuiguang.png">
+                <br/>百度推广
+            </a>
+            <a class="hd-menu-more-a">全部产品>></a>
+        </div>
+    </header>
+    <div id="skin" style="display: none">
+        <div class="skin-border"></div>
+        <div class="skin-header">
+            <div class="skin-nav">
+                <ul class="skin-ul">
+                    <li class="skin-li choose-skin">
+                        <span class="skin-name">热门</span>
+                    </li>
+                    <li class="skin-li">
+                        <span class="skin-name">游戏</span>
+                    </li>
+                    <li class="skin-li">
+                        <span class="skin-name">卡通</span>
+                    </li>
+                    <li class="skin-li">
+                        <span class="skin-name">女神降临</span>
+                    </li>
+                    <li class="skin-li">
+                        <span class="skin-name">明星</span>
+                    </li>
+                    <li class="skin-li">
+                        <span class="skin-name">风景</span>
+                    </li>
+                    <li class="skin-li">
+                        <span class="skin-name">简约</span>
+                    </li>
+                    <li class="skin-li">
+                        <span class="skin-name">小清新</span>
+                    </li>
+                </ul>
+                <span id="hideSkin" class="pull-right">
+                    收起
+                </span>
+                <span id="clearSkin" class="pull-right">
+                    不使用皮肤
+                </span>
+            </div>
+            <div class="skin-body">
+                <div class="skin-body-list choose">
+                    <img class="skin-list-pic" src="images/330096.jpg">
+                    <img class="skin-list-pic" src="images/1140850.jpg">
+                    <img class="skin-list-pic" src="images/1245099.jpg">
+                    <img class="skin-list-pic" src="images/1245073.jpg">
+                    <img class="skin-list-pic" src="images/1194252.jpg">
+                    <img class="skin-list-pic" src="images/1245065.jpg">
+                </div>
+                <div class="skin-body-list hide">
+                    <img class="skin-list-pic" src="images/11030.jpg">
+                    <img class="skin-list-pic" src="images/348008.jpg">
+                    <img class="skin-list-pic" src="images/386412.jpg">
+                    <img class="skin-list-pic" src="images/915916.jpg">
+                    <img class="skin-list-pic" src="images/498391.jpg">
+                    <img class="skin-list-pic" src="images/315578.jpg">
+                </div>
+                <div class="skin-body-list hide">
+                    <img class="skin-list-pic" src="images/354347.jpg">
+                    <img class="skin-list-pic" src="images/329319.jpg">
+                    <img class="skin-list-pic" src="images/451616.jpg">
+                    <img class="skin-list-pic" src="images/827521.jpg">
+                    <img class="skin-list-pic" src="images/43338.jpg">
+                    <img class="skin-list-pic" src="images/830236.jpg">
+                </div>
+                <div class="skin-body-list hide">
+                    <img class="skin-list-pic" src="images/1202713.jpg">
+                    <img class="skin-list-pic" src="images/329319.jpg">
+                    <img class="skin-list-pic" src="images/1113160.jpg">
+                    <img class="skin-list-pic" src="images/513286.jpg">
+                    <img class="skin-list-pic" src="images/880536.jpg">
+                    <img class="skin-list-pic" src="images/837222.jpg">
+                </div>
+                <div class="skin-body-list hide">
+                    <img class="skin-list-pic" src="images/21693.jpg">
+                    <img class="skin-list-pic" src="images/332779.jpg">
+                    <img class="skin-list-pic" src="images/366474.jpg">
+                    <img class="skin-list-pic" src="images/915823.jpg">
+                    <img class="skin-list-pic" src="images/1046698.jpg">
+                    <img class="skin-list-pic" src="images/880478.jpg">
+                </div>
+                <div class="skin-body-list hide">
+                    <img class="skin-list-pic" src="images/917257.jpg">
+                    <img class="skin-list-pic" src="images/1045538.jpg">
+                    <img class="skin-list-pic" src="images/1084234.jpg">
+                    <img class="skin-list-pic" src="images/1089984.jpg">
+                    <img class="skin-list-pic" src="images/1089969.jpg">
+                    <img class="skin-list-pic" src="images/1106043.jpg">
+                </div>
+                <div class="skin-body-list hide">
+                    <img class="skin-list-pic" src="images/19197.jpg">
+                    <img class="skin-list-pic" src="images/685828.jpg">
+                    <img class="skin-list-pic" src="images/471825.jpg">
+                    <img class="skin-list-pic" src="images/566032.jpg">
+                    <img class="skin-list-pic" src="images/313270.jpg">
+                    <img class="skin-list-pic" src="images/685824.jpg">
+                </div>
+                <div class="skin-body-list hide">
+                    <img class="skin-list-pic" src="images/445631.jpg">
+                    <img class="skin-list-pic" src="images/465110.jpg">
+                    <img class="skin-list-pic" src="images/481657.jpg">
+                    <img class="skin-list-pic" src="images/513266.jpg">
+                    <img class="skin-list-pic" src="images/1106914.jpg">
+                    <img class="skin-list-pic" src="images/1111588.jpg">
+                </div>
+                <div class="skin-body-pre">
+                    <div class="skin-preview">
+                        <div class="preview-container">
+                            <img id="preview-content">
+                            <div class="skin-body-pre-content"></div>
+                        </div>
+                    </div>
+                    <p class="preview-title">背景皮肤预览</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <img id="logo" src="images/bd_logo1.png" alt="百度" title="百度一下，你就知道" width="270px" height="129px">
+        <form id="form" name="f" action="http://www.baidu.com/s" method="get">
+            <input type="text" id="kw" name="wd">
+            <button type="submit">百度一下</button>
+        </form>
+    </div>
+    <div id="main">
+        <div id="main-menu">
+            <span class="main-menu-item main-menu-item-choose">我的关注</span>
+            <span class="main-menu-item">推荐</span>
+            <span class="main-menu-item">导航</span>
+            <span class="main-menu-item">视频</span>
+            <span class="main-menu-item">购物</span>
+        </div>
+        <div id="main-content">
+            <div class="main-content-item main-choose">
+                <span class="mine-title">我的导航</span>
+                <span class="manager">自定义</span>
+            </div>
+            <div class="main-content-item hide">
+                推荐
+            </div>
+            <div class="main-content-item hide">
+                导航
+            </div>
+            <div class="main-content-item hide">
+                视频
+            </div>
+            <div class="main-content-item hide">
+                购物
+            </div>
+        </div>
+    </div>
+    <div id="top" class="">
+        回到顶部
+    </div>
+    <footer>
+        <p class="lh">
+            <a class="sethome" href="//www.baidu.com/cache/sethelp/index.html" target="_blank"> 设为首页 </a> </p>
+        <span class="copyright-text">
+                <span>©2016&nbsp;Baidu&nbsp;</span>
+        <a href="//www.baidu.com/duty/" target="_blank">使用百度前必读</a>&nbsp;
+        <a href="http://jianyi.baidu.com" target="_blank">意见反馈</a>&nbsp;
+        <span>京ICP证030173号&nbsp;</span>
+        <img width="13" height="16" src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/copy_rignt_24.png">
+        </span>
+    </footer>
+    <!-- build:js scripts/jquery.min.js -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript" src="scripts/app.js"></script>
+</body>
+
+</html>

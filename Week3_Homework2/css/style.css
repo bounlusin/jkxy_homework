@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #87ceeb;
+}
+
+div{
+    border: 2px solid #000000;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: none;
+}
+
+.container div{
+    position: absolute;
+}
+
+/*头部*/
+#head{
+    width: 350px;
+    height: 300px;
+    background-color: #00A0E8;
+    border-radius: 50%;
+    transform: rotate(-14deg);
+    z-index: -10;
+}
+
+/*脸*/
+#face{
+    width: 280px;
+    height: 270px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: rotate(-14deg) translate(30px, 60px);
+    z-index: -2;
+}
+
+/*眼睛*/
+.eye{
+    width: 80px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.eye-ball-white{
+    width: 7px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+#left-eye{
+    transform: rotate(-3deg) translate(78px, -39px);
+}
+
+#right-eye{
+    transform: rotate(8deg) translate(152px, -59px);
+}
+
+.eye-ball{
+    width: 14px;
+    height: 30px;
+    background-color: #000000;
+    border-radius: 50%;
+    animation: blink 3s infinite linear;
+}
+
+@-webkit-keyframes blink {
+    0%{
+        transform: rotate(0deg) translate(40px, 55px);
+    }
+    25%{
+        transform: rotate(10deg) translate(40px, 55px);
+    }
+    50%{
+        transform: rotate(0deg) translate(40px, 55px);
+    }
+    75%{
+        transform: rotate(10deg) translate(40px, 55px);
+
+    }
+    100%{
+        transform: rotate(0deg) translate(40px, 55px);
+    }
+}
+
+/*鼻子*/
+#nose{
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    transform: translate(128px, 49px);
+}
+
+#nose-white{
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    transform: translate(25px, 10px);
+}
+
+#nose-to-mouth{
+    width: 3px;
+    height: 70px;
+    border: none;
+    background-color: #000000;
+    transform: rotate(7deg) translate(158px, 83px);
+}
+
+/*胡子*/
+.beard{
+    width: 72px;
+    height: 2px;
+    border: none;
+    background-color: #000000;
+}
+
+#beard-1{
+    transform: rotate(13deg) translate(65px, 64px);
+}
+#beard-2{
+    transform: rotate(8deg) translate(63px, 93px);
+}
+#beard-3{
+    transform: rotate(-2deg) translate(40px, 125px);
+}
+#beard-4{
+    transform: rotate(-1deg) translate(183px, 95px);
+}
+#beard-5{
+    transform: rotate(5deg) translate(189px, 99px);
+}
+#beard-6{
+    transform: rotate(10deg) translate(199px, 103px);
+}
+
+/*嘴巴*/
+#mouth{
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transform: rotate(-9deg) translate(89px,233px);
+    overflow: hidden;
+}
+
+#tongue{
+    width: 130px;
+    height: 90px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    transform: translate(-24px,13px);
+}
+
+/*脖子*/
+#neck{
+    width: 247px;
+    height: 20px;
+    background-color: #ff0000;
+    transform: rotate(-4deg) translate(44px,281px);
+    border-radius: 50px;
+}
+
+/*铃铛*/
+#bell{
+    width: 50px;
+    height: 50px;
+    background-color: #FFE43B;
+    border-radius: 50%;
+    transform: translate(172px, 287px);
+    overflow: hidden;
+}
+#ball{
+    width: 13px;
+    height: 13px;
+    background-color: #7D6B35;
+    border-radius: 50%;
+    transform: translate(17px, 20px);
+}
+
+#ball-to-bell{
+    width: 2px;
+    height: 16px;
+    border: none;
+    background-color: #000000;
+    transform: rotate(-8deg) translate(22px, 39px);
+}
+
+/*身体*/
+#body{
+    width: 300px;
+    height: 230px;
+    background-color: #00A0E8;
+    border-bottom: 0px;
+    border-radius: 34%;
+    transform: translate(38px, 284px);
+    overflow: hidden;
+    z-index: -1;
+}
+
+/*肚子*/
+#belly{
+    width: 190px;
+    height: 190px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: translate(60px, -8px)
+}
+
+/*口袋*/
+#pocket{
+    width: 145px;
+    height: 65px;
+    background-color: #ffffff;
+    border-bottom-right-radius: 110px;
+    border-bottom-left-radius: 110px;
+    transform: rotate(-5deg) translate(18px,105px);
+}
+
+/*补白*/
+#blank{
+    width: 240px;
+    height: 50px;
+    background-color: #87ceeb;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    transform: translate(43px,210px);
+}
+
+/*手部*/
+.swing-arm{
+    border: 0px;
+    transform-origin: 0px 300px;
+    animation: swing 3s infinite linear;
+}
+
+/* 手部动画  = =！ 感觉这个加上了还不如不加 所以注释着*/
+/*
+@-webkit-keyframes swing {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-3deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(5deg);
+    }
+    100%{
+        tranform: rotate(0deg);
+    }
+}
+*/
+
+/*左臂*/
+#left-arm{
+    width: 160px;
+    height: 80px;
+    background-color: #00A0E8;
+    border-radius: 50%;
+    transform: rotate(-33deg) translate(-155px,257px);
+}
+
+/*左右手*/
+.hand{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+#left-hand{
+    transform: translate(141px,7px);
+}
+
+#right-hand{
+    transform: translate(310px, 330px);
+}
+
+/*铜锣烧*/
+.cookie{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#cookie-outside{
+    background-color: #CE7B1A;
+    transform: translate(167px, -7px);
+    z-index: -2;
+}
+
+#cookie-inside{
+    background-color: #E2BF25;
+    transform:translate(172px, -2px);
+    z-index: -3;
+}
+
+/*脚部*/
+#left-foot{
+    width: 110px;
+    height: 135px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: translate(20px, 380px);
+}
+
+#right-foot{
+    width: 120px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: translate(274px, 366px);
+}
+
+/*尾巴*/
+#tail{
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: translate(-10px, 390px);
+    z-index: -3;
+}
+
+/*影子*/
+#shadow{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(155,155,155);
+    border: none;
+    border-radius: 50%;
+    transform: skew(30deg) translate(-300px, 300px);
+    z-index: -10;
+}

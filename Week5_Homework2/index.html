@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JavaScript——简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/Calculator.js"></script>
+</head>
+<body>
+    <h1>JavaScript简易计算器</h1>
+    <div class="container">
+        <input type="text" id="num1" required placeholder="请填写第一个数字">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">&times;</option>
+            <option value="/">&divide;</option>
+        </select>
+        <input type="text" id="num2" required placeholder="请填写第二个数字">
+        <button onclick="cal()">计算</button>
+        <br/>
+        <br/>
+        结果：
+        <span id="result"></span>
+    </div>
+</body>
+</html>

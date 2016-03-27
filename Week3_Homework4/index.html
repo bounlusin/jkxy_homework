@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>双飞翼布局</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <p>这是顶部</p>
+    </header>
+    <div class="container">
+        <div class="con-middle">
+            <div class="content">
+                <p>这是内容</p>
+                <p>这里优先渲染，宽度自适应</p>
+                <p>left-middle-right设置margin-bottom + padding-bottom = 0的方式，
+                    使得三个div高度相等，不会因为各自内容的多少而高度不一致</p>
+            </div>
+        </div>
+        <div class="con-right">
+            <p>这是右部</p>
+            <p>这里第三个渲染，宽度固定200像素</p>
+        </div>
+        <div class="con-left">
+            <p>这是左部</p>
+            <p>这里第二个渲染，宽度固定200像素</p>
+        </div>
+    </div>
+    <footer>
+        <p>这是底部</p>
+    </footer>
+</body>
+</html>

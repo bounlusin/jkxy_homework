@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>JavaScript——几等生</title>
+    <style type="text/css">
+        div{
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            margin-left: -200px;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+        function Cal(score){
+            if (parseInt(score) == NaN || score == ""){
+                return "请输入0——100以内的整数";
+            }
+            if(score>=90 && score<=100){
+                return "一等生";
+            } else if(score>=80 && score<=89){
+                return "二等生";
+            } else if(score>=70 && score<=79){
+                return "三等生";
+            } else if(score>=60 && score<=69){
+                return "四等生";
+            } else if(score>=50 && score<=59){
+                return "五等生";
+            } else if(score>=40 && score<=49){
+                return "六等生";
+            } else if(score>=30 && score<=39){
+                return "七等生";
+            } else if(score>=20 && score<=29){
+                return "八等生";
+            } else if(score>=10 && score<=19){
+                return "九等生";
+            } else if(score>=0 && score<=9){
+                return "十等生";
+            } else {
+                return "请输入0——100以内的整数";
+            }
+        }
+
+        function DoCAl(){
+            var score= document.getElementById("score").value;
+            alert(Cal(score));
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="score" placeholder="请输入学生的分数">
+        <button type="button" onclick="DoCAl()">查询该生为几等生</button>
+    </div>
+</body>
+</html>

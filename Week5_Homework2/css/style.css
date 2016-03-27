@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -250px;
+    clear: both;
+}
+
+input,select,button{
+    height: 30px;
+    line-height: 30px;
+}
+
+input{
+    height: 26px;
+    width: 200px;
+}
+
+button{
+    width: 50px;
+}

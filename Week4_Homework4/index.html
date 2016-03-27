@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title>HTML CSS 面试题总结</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style type="text/css">
+        .sidenav{
+            position: fixed;
+            right: 30px;
+            top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <div class="container">
+        <div class="col-md-9">
+            <div class="jumbotron">
+                <h1>HTML CSS 面试题总结</h1>
+                <p>HTML和CSS的知识非常繁多，我在这里对面试中比较常见的一些题目做个总结，对自己这段时间的学习简单的总结一下。</p>
+            </div>
+            <div class="panel panel-primary">
+                <a name="1"></a>
+                <div class="panel-heading">
+                    <p>Doctype 是什么？如何触发严格模式与混杂模式模式？区分它们有何意义？</p>
+                </div>
+                <div class="panel-body">
+                    <p>Doctype 是 document type（文档类型）的简写，是用来说明所用的XHTML或HTML是什么版本的。XHTML1.0 提供了三种DTD声明可供选择，分别是：</p>
+                    <p>1.过渡的(Transitional，也叫混杂模式)：要求比较宽松，允许继续使用HTML4.01的标识，完整声明为</p>
+                    <pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-tranisitional.dtd"&gt;</pre>
+                    <p>2.严格的(Strict)：要求严格的DTD，不能使用任何表现层的标识和属性，完整声明为</p>
+                    <pre>&lt;!DOCTYPE html PUBLIC "-W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</pre>
+                    <p>3.框架的(Frameset)：专门针对框架页面设计使用的DTD，如果页面中包含有框架，可以采用DTD，完整声明为</p>
+                    <pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"&gt;</pre>
+                    <p>定义成相应的声明就可以触发相应的模式。<br/>区分的意义是为了最终能达到数据与表现相分离的目地。</p>
+                    <p>HTML 5采用的声明文档类型方法为</p>
+                    <pre>&lt;!DOCTYPE html&gt;</pre>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="2"></a>
+                <div class="panel-heading">
+                    <p>行内元素和块级元素各有哪些？行内元素和块级元素的转化</p>
+                </div>
+                <div class="panel-body">
+                    <p>行内元素会再一条直线上，是在同一行的。</p>
+                    <p>块级元素会各占一行。</p>
+                    <p>行内元素主要有：</p>
+                    <pre>&lt;span&gt; &lt;a&gt; &lt;b&gt; &lt;img&gt; &lt;br&gt; &lt;button&gt; &lt;strong&gt; &lt;textarea&gt; &lt;select&gt;</pre>
+                    <p>块级元素主要有：</p>
+                    <pre>&lt;div&gt; &lt;ul&gt; &lt;li&gt; &lt;p&gt; &lt;fieldset&gt; &lt;form&gt; &lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt; &lt;hr&gt; &lt;iframe&gt; &lt;ol&gt; &lt;pre&gt; &lt;table&gt; &lt;tr&gt; &lt;td&gt;</pre>
+                    <p>行内元素可以通过display:block转为块级元素，块级元素可以通过display:inline-block转为行内元素。</p>
+                    <p>另外块级元素的margin和padding都正常，行内元素左右maring和左右padding正常，上下不识别，也就是说不能通过margin-top和padding-top来改变行高。</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="3"></a>
+                <div class="panel-heading">
+                    <p>CSS的盒模型</p>
+                </div>
+                <div class="panel-body">
+                    <p>CSS盒模型：网页设计中的每个元素都是长方形的盒子，如下图所示:</p>
+                    <img src="img/content-box.png">
+                    <p>这就是CSS中的标准盒模型，其中宽度和高度指的是 Content + Padding 的宽度和高度。</p>
+                    <p>而怪异盒模型指的是 Content + Padding + Border 以后的宽度和高度，如下图所示：</p>
+                    <img src="img/border-box.png">
+                    <p>怪异盒模型一般用在移动端的页面上。</p>
+                    <p>可以通过设置样式box-sizing: border-box 将标准盒模型转为怪异盒模型。</p>
+                    <p>Margin 比较特别，它不会影响盒子本身的大小，但是它会影响和盒子有关的其他内容。</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="4"></a>
+                <div class="panel-heading">
+                    <p>CSS引入的方式有哪些?有何区别</p>
+                </div>
+                <div class="panel-body">
+                    <dt>CSS与HTML文档结合的4中方法：</dt>
+                    　　<dd>1.使用&lt;link&gt;元素链接到外部的样式文件</dd>
+                    　　<dd>2.在&lt;head&gt;元素中使用"style"元素来指定</dd>
+                    　　<dd>3.使用CSS "@import"标记来导入样式表单</dd>
+                    　　<dd>4.在&lt;body&gt;内部的元素中使用"style"属性来定义样式</dd>
+                    <br/>
+                    <dt>本质上，link 和 @import 都是为了加载CSS文件，但还是存在着细微的差别:</dt>
+                    <dd>1.老祖宗的差别。link属于XHTML标签，而@import完全是CSS提供的一种方式。link标签除了可以加载CSS外，还可以做很多其它的事情，比如定义RSS，定义rel连接属性等，@import就只能加载CSS了。</dd>
+                    <dd>2.加载顺序的差别。当一个页面被加载的时候（就是被浏览者浏览的时候），link引用的CSS会同时被加载，而@import引用的CSS会等到页面全部被下载完再被加载。</dd>
+                    <dd>3.兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，@import只有在IE5以上的才能识别，而link标签无此问题。</dd>
+                    <dd>4.使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。</dd>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="5"></a>
+                <div class="panel-heading">
+                    <p>CSS选择符有哪些？</p>
+                </div>
+                <div class="panel-body">
+                    <dt>CSS选择符主要有以下10类：</dt>
+                        <dd>1.通配选择符：*{margin:0px;}</dd>
+                        <dd>2.类型选择符：a{text-decoration:none;}</dd>
+                        <dd>3.属性选择符：input[type="button"]{padding:5px;}</dd>
+                      　<dd>4.包含选择符：div.code a{text-decoration:none;}</dd>
+                        <dd>5.子对象选择符：ul.test>li{font-size:14px;}</dd>
+                     　 <dd>6.ID选择符：#test {color:red;}</dd>
+                     　 <dd>7.类选择符：.test{color:red;}</dd>
+                        <dd>8.选择符分组：body,ul,li{margin:0px;}</dd>
+                        <dd>9.伪类及伪对象选择符：div:first-letter{font-size:16px;}、a.test:hover{text-decoration:underline;}</dd>
+                        <dd>10.相邻选择符：li+li{font-weight:bold;}</dd>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="6"></a>
+                <div class="panel-heading">
+                    <p>CSS哪些属性可以继承？</p>
+                </div>
+                <div class="panel-body">
+                    <p>CSS可以继承的属性有：</p>
+                    <p>1、文字相关：font-family、font-size、font-style、font-variant、font-weight、font、letter-spacing、line-height、text-align、text-indent、text-transform、word-spacing</p>
+                　　<p>2、列表相关：list-style-image、list-style-position、list-style-type、list-style</p>
+                　　<p>3、颜色相关:color</p>
+                　　<p>4、透明度：opacity(opacity的继承有问题，子元素会继承祖元素的opacity，但是无法更改。)</p>
+                　　<p>另外，font-size继承的是父元素的大小，而不是比例。line-height当父元素是百分比或px值的时候，子元素跟父元素相同，当父元素是normal或数字的时候，子元素的line-height是子元素的字体大小乘以数字。</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="7"></a>
+                <div class="panel-heading">
+                    <p>CSS优先级算法如何计算？</p>
+                </div>
+                <div class="panel-body">
+                    <p>重要性和来源的优先级排序从低到高是：</p>
+                　　<p>1.浏览器默认样式</p>
+                　　<p>2.用户在浏览器中定义的普通样式（normal规则，不带important规则）</p>
+                　　<p>3.开发人员定义的普通样式（ normal规则，不带important规则）</p>
+                　　<p>4.开发人员定义特殊样式（带important规则）</p>
+                　　<p>5.用户在浏览器中定义特殊样式（带important规则）</p>
+                　　<p>另外还有一些原则：</p>
+                　　<p>1.相同的样式在CSS规则后添加了!important的优先于没有添加的。</p>
+                　　<p>2.CSS规则在文档中出现的顺序后面定义的的优先于前面定义的。</p>
+                　　<p>3.内联样式优先于用link引入的样式和页面上&lt;style&gt;里的样式。</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="8"></a>
+                <div class="panel-heading">
+                    <p>前端页面有哪三层构成，分别是什么？作用是什么？</p>
+                </div>
+                <div class="panel-body">
+                    <p>1.结构层：由 HTML 或 XHTML 之类的标记语言负责创建，仅负责语义的表达。解决了页面“内容是什么”的问题。</p>
+                    <p>2.表示层：由CSS负责创建，解决了页面“如何显示内容”的问题。</p>
+                    <p>2.行为层：由脚本负责。解决了页面上“内容应该如何对事件作出反应”的问题。</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="9"></a>
+                <div class="panel-heading">
+                    <p>主流的浏览器分别是什么内核？</p>
+                </div>
+                <div class="panel-body">
+                    <p>IE：Trident内核</p>
+                    <p>Mozilla FireFox：Gecko内核</p>
+                    <p>Chrome、Safari：Webkit内核</p>
+                    <p>Opera：Presto内核</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="10"></a>
+                <div class="panel-heading">
+                    <p>经常遇到的浏览器兼容性有哪些？如何解决？</p>
+                </div>
+                <div class="panel-body">
+                    <p>1.浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。</p>
+                    <p>2.IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。解决方案是在float的标签样式控制中加入 display:inline;将其转化为行内属性。</p>
+                    <p>3.在ie6，ie7中元素高度超出自己设置高度。原因是IE8以前的浏览器中会给元素设置默认的行高的高度导致的。解决方案是加上overflow:hidden或设置line-height为更小的高度。</p>
+                    <p>4.min-height在IE6下不起作用。解决方案是添加 height:auto !important;height:xxpx;其中xx就是min-height设置的值。</p>
+                    <p>5.透明性IE用滤镜filter:Alpha(Opacity=60)，而其他主流浏览器用 opacity:0.6。</p>
+                    <p>6.a(有href属性)标签嵌套下的img标签，在IE下会带有边框。解决办法是加上a img{border:none;}样式。</p>
+                    <p>7.input边框问题。去掉input边框一般用border:none;就可以，但由于IE6在解析input样式时的BUG(优先级问题)，在IE6下无效。</p>
+                    <p>ie6的默认CSS样式，涉及到border的有border-style:inset;border-width:2px;浏览器根据自己的内核解析规则，先解析自身的默认CSS，再解析开发者书写的CSS，达到渲染标签的目的。IE6对INPUT的渲染存在bug，border:none;不被解析，当有border-width或border-color设置的时候才会令IE6去解析border-style:none;。</p>
+                    <p>解决方案是用:border:0或border:0 none;或border:none:border-color:transparent;，推荐用第三种方案。</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="15"></a>
+                <div class="panel-heading">CSS HACK</div>
+                <div class="panel-body">
+                    <p>CSS HACK即针对不同的浏览器写不同的CSS，目的使CSS兼容不同的浏览器。</p>
+                    <p>CSS HACK方式：</p>
+                    <pre>
+                        <p>background-color:#f1ee18;/*所有识别*/</p>
+                        <p>.background-color:#00deff\9; /*IE6、7、8识别*/</p>
+                        <p>+background-color:#a200ff;/*IE6、7识别*/</p>
+                        <p>_background-color:#1e0bd1;/*IE6识别*/</p>
+                        <p>@media screen and (-webkit-min-device-pixel-ratio:0){.bb{background-color:#f1ee18}}{} /* Sarafi(Chrome) 有效 */</p>
+                        <p>.bb, x:-moz-any-link, x:default{background-color:#00ff00;}/*IE7 FireFox3.5及以下 识别 */</p>
+                        <p>@-moz-document url-prefix(){.bb{background-color:#00ff00;}}/*FireFox 识别*/</p>
+                        <p>* +html .bb{background-color:#a200ff;}/* 仅IE7 识别 */</p>
+                        <p>@media all and (min-width: 0px){.bb {background-color:#ffffff;}}/* FireFox Opera Sarafi 识别*/</p>
+                    </pre>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <a name="11"></a>
+                <div class="panel-heading">
+                    <p>img标签上title与alt属性的区别是什么?</p>
+                </div>
+                <div class="panel-body">
+                    <p>Alt 当图片不显示是 用文字代表。</p>
+                    <p>Title 为该属性提供信息</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="12"></a>
+                <div class="panel-heading">
+                    <p>描述css reset的作用和用途。</p>
+                </div>
+                <div class="panel-body">
+                    <p>Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一。</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="13"></a>
+                <div class="panel-heading">
+                    <p>解释css sprites，如何使用。</p>
+                </div>
+                <div class="panel-body">
+                    <p>Css 雪碧图，把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量。通过调整图片的位置在页面上显示出不同的内容。</p>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <a name="14"></a>
+                <div class="panel-heading">
+                    <p>清除浮动的几种方式，各自的优缺点</p>
+                </div>
+                <div class="panel-body">
+                    <p>1.使用空标签清除浮动 clear:both(理论上能清楚任何标签，增加无意义的标签)</p>
+                    <p>2.使用overflow:auto(空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE)</p>
+                    <p>3.是用afert伪元素清除浮动(用于非IE浏览器)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 sidenav">
+            <div class="list-group">
+                <a></a>
+                <a href="#1" class="list-group-item">Doctype是什么？</a>
+                <a href="#2" class="list-group-item">行内元素和块级元素各有哪些？</a>
+                <a href="#3" class="list-group-item">CSS的盒模型</a>
+                <a href="#4" class="list-group-item">CSS引入的方式有哪些？</a>
+                <a href="#5" class="list-group-item">CSS选择符有哪些？</a>
+                <a href="#6" class="list-group-item">CSS哪些属性可以继承？</a>
+                <a href="#7" class="list-group-item">CSS优先级算法如何计算？</a>
+                <a href="#8" class="list-group-item">前端页面有哪三层构成？</a>
+                <a href="#9" class="list-group-item">主流的浏览器分别是什么内核？</a>
+                <a href="#10" class="list-group-item">浏览器兼容的问题</a>
+                <a href="#15" class="list-group-item">CSS HACK</a>
+                <a href="#11" class="list-group-item">img标签上title与alt属性的区别是什么？</a>
+                <a href="#12" class="list-group-item">描述css reset的作用和用途。</a>
+                <a href="#13" class="list-group-item">解释css sprites，如何使用。</a>
+                <a href="#14" class="list-group-item">清除浮动的几种方式，各自的优缺点</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

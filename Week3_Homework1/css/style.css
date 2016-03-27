@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(110,199,233);
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "微软雅黑", Arial, sans-serif;
+    font-size: 36px;
+    text-shadow: 4px 4px rgb(33,33,33);
+    color: #ffffff;
+}
+
+/*魔方定位*/
+.view{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: transparent;
+}
+
+#box{
+    animation: ratation 6s infinite linear;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 75px 75px 0;
+}
+
+/*动画设置*/
+@-webkit-keyframes ratation{
+    0%{
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16%{
+        -webkit-transform: rotateX(90deg) rotateY(0deg) rotateZ(90deg);
+    }
+    33%{
+        -webkit-transform: rotateX(180deg) rotateY(90deg) rotateZ(90deg);
+    }
+    50%{
+        -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
+    66%{
+        -webkit-transform: rotateX(270deg) rotateY(270deg) rotateZ(180deg);
+    }
+    87%{
+        -webkit-transform: rotateX(270deg) rotateY(360deg) rotateZ(270deg);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+/* 前后左右上下 各个面 3D变形 */
+#box>div{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 75px 75px 0;
+}
+
+#box .front{
+    -webkit-transform: translateZ(75px);
+}
+
+#box .back{
+    -webkit-transform: rotateY(180deg) translateZ(75px);
+}
+
+#box .left{
+    -webkit-transform: rotateY(90deg) translateZ(-75px);
+}
+
+#box .right{
+    -webkit-transform: rotateY(90deg) translateZ(75px);
+}
+
+#box .top{
+    -webkit-transform: rotateX(90deg) translateZ(75px);
+}
+
+#box .bottom{
+    -webkit-transform: rotateX(90deg) translateZ(-75px);
+}
+
+/* 小块设置 */
+.piece{
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    float: left;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 3px;
+    opacity: 0.85;
+}
+
+.violet{
+    background-color: rgb(153, 50, 204);
+}
+
+.green{
+    background-color: rgb(0,255,0);
+}
+
+.red{
+    background-color: rgb(255, 0, 0);
+}
+
+.yellow{
+    background-color: rgb(255, 255, 0);
+}
+
+.blue{
+    background-color: rgb(13,23,255);
+}
+
+.gray{
+    background-color: rgb(155,155,155);
+}

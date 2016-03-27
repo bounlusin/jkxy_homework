@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "微软雅黑", Arial, sans-serif;
+    font-size: 26px;
+    color: #000000;
+    text-align: center;
+}
+
+/*统一设为100%宽度*/
+header, footer, .container{
+    width: 100%;
+}
+
+/*顶部*/
+header{
+    height: 150px;
+    background-color: #ff4500;
+    line-height: 150px;
+}
+
+/*container*/
+.container{
+    height: auto;
+    min-height: 400px;
+    background-color: skyblue;
+    overflow: hidden;
+}
+
+/*统一设置向左浮动， 下内边距5000px*/
+.con-middle, .con-left, .con-right{
+    float: left;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+}
+
+/*中间部分*/
+.con-middle{
+    width: 100%;
+    background-color: #d2691e;
+}
+
+/*内容部分*/
+.content{
+    margin: 0 200px 0 200px;
+}
+
+/*左边*/
+.con-left{
+    width: 200px;
+    background-color: #ffd700;
+    margin-left: -100%;
+}
+
+/*右边*/
+.con-right{
+    width: 200px;
+    background-color: #6a5acd;
+    margin-left: -200px;
+}
+
+/*底部*/
+footer{
+    height: 100px;
+    background-color: #87eeeb;
+    line-height: 100px;
+}

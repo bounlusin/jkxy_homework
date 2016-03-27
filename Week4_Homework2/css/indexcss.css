@@ -1,0 +1,48 @@
+body{
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+/*顶部*/
+.hd-navbar{
+    margin: 0;
+}
+
+/*主体container*/
+
+/*左边菜单*/
+.sidebar{
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .sidebar{
+        display: none;
+    }
+}
+
+.nav-sidebar{
+    margin-right: -21px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.nav-sidebar>li>a:hover,
+.nav-sidebar>li>a:active,.active{
+    color: #fff;
+    background-color: #428bca;
+}
+
+/*右边主体*/
+.main{
+    padding: 30px;
+}

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>web端——七座山保健商城</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/web.css">
+</head>
+<body>
+    <!--顶部-->
+    <header>
+        <!--顶部登录和注册-->
+        <div class="hd-bg">
+            <div class="container">
+                <div class="pull-left">
+                    <span class="font-light">您好，欢迎来到七座山!&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <span class="font-light">&nbsp;&nbsp;&nbsp;&nbsp;服务热线：</span>
+                    <span class="font-tel">400-000-8888</span>
+                </div>
+                <div class="pull-right">
+                    <span class="font-bold font-light a">[&nbsp;登录&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <span class="font-bold font-light a">&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;免费注册&nbsp;]</span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!--LOGO 和 搜索条-->
+            <div class="hd-form">
+                <div class="pull-left">
+                    <img src="img/hd_logo.png" width="96" height="91">
+                </div>
+                <form class="form-inline pull-right">
+                    <div class="form-group has-feedback">
+                        <label class="sr-only" for="search">search</label>
+                        <input class="form-control" id="search" placeholder="请输入搜索的商品"/>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning">购物车</button>
+                    </div>
+                </form>
+            </div>
+            <!--导航栏-->
+            <table class="table col-md-12">
+                <thead>
+                    <!--导航栏-->
+                    <tr>
+                        <th class="col-md-3 th1">
+                            <a href="#" class="hd-tb-aa">全部商品分类</a>
+                        </th>
+                        <th class="col-md-9 th2">
+                            <a href="#" class="hd-tb-a">首页</a>
+                            <a href="#" class="hd-tb-a">养生产品</a>
+                            <a href="#" class="hd-tb-a">保健食品</a>
+                            <a href="#" class="hd-tb-a">保健机械</a>
+                            <a href="#" class="hd-tb-a">营养百科</a>
+                            <a href="#" class="hd-tb-a">订购帮助</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!--左侧分类-->
+                        <td class="col-md-3">
+                            <div class="hd-title">
+                                <p class="font-title">按人群划分</p>
+                            </div>
+                            <div>
+                                <p class="hd-sort-title">
+                                    <span class="text-left font-sort">女士</span>
+                                    <span class="pull-right font-sym">&gt;</span>
+                                </p>
+                                <p class="font-light text-center">
+                                    美体塑身&nbsp;&nbsp;&nbsp;&nbsp;排毒养颜&nbsp;&nbsp;&nbsp;&nbsp;月经不调
+                                </p>
+                                <p class="font-light text-center">
+                                    丰胸美乳&nbsp;&nbsp;&nbsp;&nbsp;孕前营养&nbsp;&nbsp;&nbsp;&nbsp;促进泌乳
+                                </p>
+                                <p class="font-light text-center">
+                                    妇科炎症&nbsp;&nbsp;&nbsp;&nbsp;产妇营养
+                                </p>
+                            </div>
+                            <hr/>
+                            <div>
+                                <p class="hd-sort-title">
+                                    <span class="text-left font-sort">男士</span>
+                                    <span class="pull-right font-sym">&gt;</span>
+                                </p>
+                                <p class="font-light text-center">
+                                    补肾壮阳&nbsp;&nbsp;&nbsp;&nbsp;解酒保肝&nbsp;&nbsp;&nbsp;&nbsp;缓解疲劳
+                                </p>
+                                <p class="font-light text-center">
+                                    基础营养&nbsp;&nbsp;&nbsp;&nbsp;强身增肌&nbsp;&nbsp;&nbsp;&nbsp;痛风
+                                </p>
+                                <p class="font-light text-center">
+                                    前列腺养护&nbsp;&nbsp;&nbsp;&nbsp;
+                                </p>
+                            </div>
+                            <hr/>
+                            <div>
+                                <p class="hd-sort-title">
+                                    <span class="text-left font-sort">老人</span>
+                                    <span class="pull-right font-sym">&gt;</span>
+                                </p>
+                                <p class="font-light text-center">
+                                    心脑养护&nbsp;&nbsp;&nbsp;&nbsp;眼部调理&nbsp;&nbsp;&nbsp;&nbsp;养肺润肺
+                                </p>
+                                <p class="font-light text-center">
+                                    改善记忆&nbsp;&nbsp;&nbsp;&nbsp;肝肾养护&nbsp;&nbsp;&nbsp;&nbsp;改善听力
+                                </p>
+                                <p class="font-light text-center">
+                                    骨质疏松&nbsp;&nbsp;&nbsp;&nbsp;改善睡眠&nbsp;&nbsp;&nbsp;&nbsp;降血脂
+                                </p>
+                            </div>
+                            <hr/>
+                            <div>
+                                <p class="hd-sort-title">
+                                    <span class="text-left font-sort">儿童</span>
+                                    <span class="pull-right font-sym">&gt;</span>
+                                </p>
+                                <p class="font-light text-center">
+                                    健脑益智&nbsp;&nbsp;&nbsp;&nbsp;强体质&nbsp;&nbsp;&nbsp;&nbsp;预防近视
+                                </p>
+                                <p class="font-light text-center">
+                                    促进生长发育&nbsp;&nbsp;&nbsp;&nbsp;
+                                </p>
+                            </div>
+                            <div class="hd-title">
+                                <p class="font-title">按商品分类</p>
+                            </div>
+                            <div>
+                                <p class="font-light text-center">
+                                    抑制肿瘤&nbsp;&nbsp;&nbsp;&nbsp;保健器械&nbsp;&nbsp;&nbsp;&nbsp;保健饮品
+                                </p>
+                                <p class="font-light text-center">
+                                    养生食品&nbsp;&nbsp;&nbsp;&nbsp;养生用品
+                                </p>
+                            </div>
+                            <div class="hd-title">
+                                <p class="font-title">按营养成分分类</p>
+                            </div>
+                            <div>
+                                <p class="font-light text-center">
+                                    钙&nbsp;&nbsp;&nbsp;&nbsp;鱼油&nbsp;&nbsp;&nbsp;&nbsp;蜂胶
+                                </p>
+                                <p class="font-light text-center">
+                                    蛋白肽&nbsp;&nbsp;&nbsp;&nbsp;卵磷脂&nbsp;&nbsp;&nbsp;&nbsp;氨基酸
+                                </p>
+                                <p class="font-light text-center">
+                                    蛋白质&nbsp;&nbsp;&nbsp;&nbsp;维生素&nbsp;&nbsp;&nbsp;&nbsp;矿物质
+                                </p>
+                                <p class="font-light text-center">
+                                    左旋肉碱&nbsp;&nbsp;&nbsp;&nbsp;膳食纤维&nbsp;&nbsp;&nbsp;&nbsp;草本植物精华
+                                </p>
+                            </div>
+                        </td>
+                        <!--右侧广告-->
+                        <td class="col-md-9">
+                            <div class="col-md-13">
+                                <a href="#"><img src="img/hd_pic_09.png" class="img-responsive center-block"></a>
+                            </div>
+                            <div class="col-md-12 hd-pic-1">
+                                <div class="col-md-4">
+                                        <p class="text-center font-bold">限时秒杀</p>
+                                        <p class="text-center font-light small">营养素5折起</p>
+                                        <a href="#"><img src="img/hd_pic_08.png" class="img-responsive center-block"></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="text-center font-bold">新品到货</p>
+                                    <p class="text-center font-light small">新品优惠中</p>
+                                    <a href="#"><img src="img/hd_pic_07.png" class="img-responsive center-block"></a>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="text-center font-bold">热销产品</p>
+                                    <p class="text-center font-light small">总有一款适合你</p>
+                                    <a href="#"><img src="img/hd_pic_06.png" class="img-responsive center-block"></a>
+                                </div>
+                            </div>
+                            <div class="hd-recommend">
+                                <span class="pull-left font-title">今日推荐</span>
+                                <span class="pull-right font-light small" id="hd-notice">七座山医疗保健商城隆重上线，开业大酬宾！！！</span>
+                            </div>
+                            <div class="col-md-12 hd-pic-2">
+                                <div class="col-md-3">
+                                    <p>正宗宁夏中宁特级枸杞</p>
+                                    <p><span class="font-money">&yen;158&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                                    <a href="#"><img src="img/hd_pic_05.png" class="img-responsive center-block"></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <p>正宗宁夏中宁特级枸杞</p>
+                                    <p><span class="font-money">&yen;158&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                                    <a href="#"><img src="img/hd_pic_03.png" class="img-responsive center-block"></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <p>固本堂阿胶糕</p>
+                                    <p><span class="font-money">&yen;158&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                                    <a href="#"><img src="img/hd_pic_02.png" class="img-responsive center-block"></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <p>汤臣倍健R鱼油软胶囊</p>
+                                    <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                                    <a href="#"><img src="img/hd_pic_01.png" class="img-responsive center-block"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--中间广告-->
+            <div class="col-md-12">
+                <img src="img/hd_ad.png" class="img-responsive">
+            </div>
+        </div>
+    </header>
+    <!--内容主体Container-->
+    <div class="container">
+        <!-- 1F 美丽女性 -->
+        <div class="clearfix">
+            <div class="con-title">
+                <span>1F&nbsp;&nbsp;</span>
+                <span class="small">美丽女性</span>
+                <hr/>
+            </div>
+            <div>
+                <div class="col-md-3" id="con-left-1">
+                    <div class="con-left-menu-1">
+                        <p>妇科炎症&nbsp;&nbsp;&nbsp;&nbsp;综合营养素</p>
+                        <p>月经不调&nbsp;&nbsp;&nbsp;&nbsp;更年期调理</p>
+                        <p>排毒养颜&nbsp;&nbsp;&nbsp;&nbsp;抗氧化抗刷老</p>
+                        <p>美体塑身&nbsp;&nbsp;&nbsp;&nbsp;丰胸美乳</p>
+                        <p>孕前营养&nbsp;&nbsp;&nbsp;&nbsp;促进泌乳</p>
+                    </div>
+                    <div class="con-left-more-1">
+                        <p>更多女士分类</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">正宗宁夏中宁枸杞</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f1_pic_01.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">云南特产文山三七</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f1_pic_02.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">杷里香</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f1_pic_03.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">正宗宁夏中宁枸杞</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f1_pic_04.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">正宗宁夏中宁枸杞</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f1_pic_01.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">云南特产文山三七</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f1_pic_02.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">杷里香</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f1_pic_03.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">正宗宁夏中宁枸杞</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f1_pic_04.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2F 健康男性 -->
+        <div class="clearfix">
+            <div class="con-title">
+                <span>2F&nbsp;&nbsp;</span>
+                <span class="small">健康男性</span>
+                <hr/>
+            </div>
+            <div>
+                <div class="col-md-3" id="con-left-2">
+                    <div class="con-left-menu-2">
+                        <p>补肾壮阳&nbsp;&nbsp;&nbsp;&nbsp;解酒保肝</p>
+                        <p>前列腺养护&nbsp;&nbsp;&nbsp;&nbsp;基础营养素</p>
+                        <p>痛风&nbsp;&nbsp;&nbsp;&nbsp;解除疲劳</p>
+                        <p>强身增肌&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="con-left-more-2">
+                        <p>更多男士分类</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">维D钙</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f2_pic_01.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">小儿碳酸钙D3颗粒</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f2_pic_02.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">碳酸钙D3片</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f2_pic_03.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">跌打镇痛膏</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f2_pic_04.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">排毒养颜胶囊</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f2_pic_05.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">云南白药</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f2_pic_06.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">维D钙咀嚼片</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f2_pic_07.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">五子衍宗丸</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f2_pic_08.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3F 夕阳专区 -->
+        <div class="clearfix">
+            <div class="con-title">
+                <span>3F&nbsp;&nbsp;</span>
+                <span class="small">夕阳专区</span>
+                <hr/>
+            </div>
+            <div>
+                <div class="col-md-3" id="con-left-3">
+                    <div class="con-left-menu-3">
+                        <p>心脑养护&nbsp;&nbsp;&nbsp;&nbsp;眼部调理</p>
+                        <p>养肺润肺&nbsp;&nbsp;&nbsp;&nbsp;改善记忆</p>
+                        <p>肝肾养护&nbsp;&nbsp;&nbsp;&nbsp;改善听力</p>
+                        <p>骨质酥松&nbsp;&nbsp;&nbsp;&nbsp;改善睡眠</p>
+                    </div>
+                    <div class="con-left-more-3">
+                        <p>更多老年分类</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">Snobel</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f3_pic_01.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">HERBALIFE</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f3_pic_02.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">维D钙</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f3_pic_03.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">排毒养颜胶囊</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f3_pic_04.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">Donless</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f3_pic_05.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">Durex</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f3_pic_06.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">名流</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f3_pic_07.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">跌打镇痛膏</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f3_pic_08.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 4F 儿童专区 -->
+        <div class="clearfix">
+            <div class="con-title">
+                <span>4F&nbsp;&nbsp;</span>
+                <span class="small">儿童专区</span>
+                <hr/>
+            </div>
+            <div>
+                <div class="col-md-3" id="con-left-4">
+                    <div class="con-left-menu-4">
+                        <p>健脑益智&nbsp;&nbsp;&nbsp;&nbsp;增强体质</p>
+                        <p>预防近视&nbsp;&nbsp;&nbsp;&nbsp;促进生长发育</p>
+                    </div>
+                    <div class="con-left-more-4">
+                        <p>更多儿童分类</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">鱼油软胶囊</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f4_pic_01.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">沙辣茶低聚果糖</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f4_pic_02.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">优菌多</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f4_pic_03.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">天松</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f4_pic_04.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">益常乐口服液</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f4_pic_05.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">生命1号</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f4_pic_06.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">昂立1号</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f4_pic_07.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">优菌多</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f4_pic_08.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 5F 其他专区 -->
+        <div class="clearfix">
+            <div class="con-title">
+                <span>5F&nbsp;&nbsp;</span>
+                <span class="small">其他专区</span>
+                <hr/>
+            </div>
+            <div>
+                <div class="col-md-3" id="con-left-5">
+                    <div class="con-left-menu-5">
+                        <p>抑制肿瘤&nbsp;&nbsp;&nbsp;&nbsp;保健器械</p>
+                        <p>保健饮品&nbsp;&nbsp;&nbsp;&nbsp;养生食品</p>
+                        <p>养生用品&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="con-left-more-5">
+                        <p>更多其他分类</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">天松大豆低聚糖</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f5_pic_01.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">天松大豆低聚糖</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f5_pic_02.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">天松大豆低聚糖</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f5_pic_01.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">天松大豆低聚糖</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f5_pic_02.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">天松大豆低聚糖</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f5_pic_01.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">天松大豆低聚糖</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f5_pic_02.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">天松大豆低聚糖</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f5_pic_01.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 con-border">
+                        <p class="font-light">天松大豆低聚糖</p>
+                        <p><span class="font-money">&yen;100&nbsp;&nbsp;</span><span class="small font-light">&yen;216</span></p>
+                        <img src="img/f5_pic_02.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <footer>
+        <!--底部广告-->
+        <div class="ft-bg center-block">
+            <div class="container ft-bg-container">
+                <div class="col-md-3">
+                    <div class="col-md-6">
+                        <img src="img/ft_pic_05.png">
+                    </div>
+                    <p class="font-light font-bold">100%正品保障</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-6">
+                        <img src="img/ft_pic_06.png">
+                    </div>
+                    <p class="font-light font-bold">支持退换货</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-6">
+                        <img src="img/ft_pic_07.png">
+                    </div>
+                    <p class="font-light font-bold">12小时闪电发货</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-md-6">
+                        <img src="img/ft_pic_08.png">
+                    </div>
+                    <p class="font-light font-bold">7&times;24小时贴心守候</p>
+                </div>
+            </div>
+        </div>
+        <!--底部信息1-->
+        <div class="container ft-info-1">
+            <div class="col-md-2 col-md-offset-1">
+                <p class="font-bold">订购帮助</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;帮助中心</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;注册协议</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;购物流程</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;交易条款</p>
+            </div>
+            <div class="col-md-2">
+                <p class="font-bold">支付方式</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;网银支付</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;发票说明</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;货到付款</p>
+            </div>
+            <div class="col-md-2">
+                <p class="font-bold">物流配运</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;送装一体</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;全场免运费</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;配送方式</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;24小时限时达</p>
+            </div>
+            <div class="col-md-2">
+                <p class="font-bold">售后服务</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;退款说明</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;售后服务政策</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;产品保证质量</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;咨询投诉</p>
+            </div>
+            <div class="col-md-2">
+                <p class="font-bold">关于我们</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;发展历程</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;联系方式</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;公司介绍</p>
+                <p class="font-light small">&nbsp;&nbsp;&nbsp;&nbsp;企业文化</p>
+            </div>
+        </div>
+        <!--底部信息2-->
+        <div class="container ft-info-2">
+            <div class="col-md-6 col-md-offset-3">
+                <p class="font-light small text-center">
+                    <span>关于我们&nbsp;&nbsp;&nbsp;&nbsp;</span>|
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&nbsp;&nbsp;</span>|
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;人才招聘&nbsp;&nbsp;&nbsp;&nbsp;</span>|
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;友情链接&nbsp;&nbsp;&nbsp;&nbsp;</span>|
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;健康公益&nbsp;&nbsp;&nbsp;&nbsp;</span>|
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;售后管理</span>
+                </p>
+                <p class="font-light small text-center">
+                    <span>网站备案/许可证号：京ICP备10000000号</span>
+                </p>
+                <p class="font-light small text-center">
+                    <span>Copyright&copy;2010—2014 电子商务网 All Rights Reserved</span>
+                </p>
+                <p class="center-block">
+                    <img src="img/ft_pic_01.png">
+                    <span>&nbsp;&nbsp;</span>
+                    <img src="img/ft_pic_02.png">
+                    <span>&nbsp;&nbsp;</span>
+                    <img src="img/ft_pic_03.png">
+                    <span>&nbsp;&nbsp;</span>
+                    <img src="img/ft_pic_04.png">
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
