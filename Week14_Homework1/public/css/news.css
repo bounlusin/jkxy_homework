@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+
+/*头部*/
+header {
+    background-color: #3e98f0;
+    height: 44px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header .left-icons a,
+header .right-icons a,
+footer > ul > li a {
+    display: block;
+    width: 34px;
+    height: 44px;
+}
+
+header .left-icons {
+    float: left;
+}
+
+header .right-icons {
+    float: right;
+}
+
+header div ul {
+    font-size: 0px;
+}
+
+header div ul li {
+    display: inline-block;
+}
+
+
+/*上方图标*/
+
+.icon {
+    border: 0;
+    background-image: url('../img/toolbar.png');
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+
+.icon-logo {
+    background-position: center 4px;
+}
+
+.icon-info {
+    background-position: center -463px;
+}
+
+.icon-search {
+    background-position: center -162px;
+}
+
+.icon-add {
+    background-position: center -107px;
+}
+
+.icon-feedback {
+    background-position: 0 3px;
+}
+
+
+/*菜单*/
+
+.menu {
+    background-color: #3e98f0;
+    padding: 15px 0;
+}
+
+.menu ul {
+    font-size: 0px;
+}
+
+.menu ul li {
+    font-size: 16px;
+    display: inline-block;
+    width: 16.6%;
+    text-align: center;
+}
+
+.menu ul li a {
+    display: inli;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu ul li a.active {
+    border-bottom: 1px solid #fff;
+}
+
+
+/*新闻列表*/
+
+.news-list li {
+    display: block;
+    padding: 10px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.news-list li span {
+    display: block;
+}
+
+.news-list .title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+    margin: -1px 0 4px 0;
+}
+
+.news-list .content-side {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.news-list .content {
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.news-list .time {
+    font-size: 8px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 100;
+}
+
+.contents .load-more {
+    height: 50px;
+    margin: 10px;
+    line-height: 50px;
+    background-color: #f8f9fa;
+    text-align: center;
+    border: 1px solid #ebedef;
+    display: none;
+}
+
+.pic-side {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.pic-side img {
+    display: block;
+    width: 95px;
+    height: 68px;
+}
+
+
+/*底部*/
+
+footer {
+    height: 44px;
+    background-color: #3e98f0;
+    font-size: 0px;
+    display: none;
+}
+
+footer .extra {
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .extra .text {
+    display: inline-block;
+    height: 100%;
+    line-height: 44px;
+    vertical-align: top;
+}
+
+
+/*底部图标*/
+
+footer .func-icon {
+    display: inline-block;
+    height: 40px;
+    width: 35px;
+    border: 0;
+    background-image: url('../img/footer.png');
+    background-size: 30px 370px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+footer .icon-mail {
+    background-position: 10px 13px;
+}
+
+footer .icon-app {
+    background-position: 10px -29px;
+}
+
+footer .icon-download {
+    background-position: 10px -72px;
+}
+
+
+/*加载框*/
+
+.loading {
+    /*display: none;*/
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    margin-top: -35px;
+    left: 50%;
+    margin-left: -35px;
+    background: url('../img/animation.png') 0 0 no-repeat;
+    background-size: 70px 140px;
+    text-align: center;
+}
+
+.loading .animator {
+    height: 70px;
+    width: 70px;
+    background: url('../img/animation.png') 0 -70px no-repeat;
+    background-size: 70px 140px;
+    -webkit-animation: loading-animation 2s linear infinite;
+}
+
+
+/*加载动画*/
+
+@-webkit-keyframes loading-animation {
+    0% {
+        -webkit-transform: rotate(0)
+    }
+    50% {
+        -webkit-transform: rotate(180deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
